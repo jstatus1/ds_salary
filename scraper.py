@@ -4,7 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 import pandas as pd
 
-def get_jobs(keyword, num_jobs, verbose, path, slp_time):
+def get_jobs(keyword, num_jobs, verbose, slp_time):
     
     '''Gathers jobs as a dataframe, scraped from Glassdoor'''
     
@@ -182,7 +182,4 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
     return pd.DataFrame(jobs)  #This line converts the dictionary object into a pandas DataFrame.
 
 
-path = "C:/Users/Johnson/Documents/GitHub/Data Science Projects/ds_salary_proj/chromedriver"
-df = get_jobs("data scientist", 15, False, path, 15)
 
-df
