@@ -51,3 +51,4 @@ df['spark_yn'] = df['Job Description'].apply(lambda x: 1 if 'spark' in x.lower()
 df['aws_yn'] = df['Job Description'].apply(lambda x: 1 if 'aws' in x.lower() else 0)
 df['excel_yn'] = df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
 
+df.to_csv('glassdoor_jobs_cleaned.csv', index = False)
