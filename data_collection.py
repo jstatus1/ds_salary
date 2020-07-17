@@ -12,5 +12,5 @@ import pandas as pd
 
 
 
-df =  gs.get_jobs("data scientist", 15, False, 15)
-df
+df =  gs.get_jobs("data scientist", 500, False, 15)
+df.to_csv('glassdoor_jobs.csv', index = False)
